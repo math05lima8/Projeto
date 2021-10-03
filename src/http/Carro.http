@@ -1,0 +1,46 @@
+// Teste da API REST
+
+@baseURL = http://localhost:4010
+@id = 615a1f84cd1b91092457ad09
+
+###
+// GET - Listar - carros
+GET {{baseURL}}/carros
+Content-Type: application/json
+
+###
+// GET - Listar - carro - ID
+GET {{baseURL}}/carros/{{id}}
+Content-Type: application/json
+
+###
+// DELETE - Apaga - carro - ID
+DELETE {{baseURL}}/carros/{{id}}
+Content-Type: application/json
+
+###
+// POST - Incluir - carro
+POST {{baseURL}}/carros
+Content-Type: application/json
+
+{
+    "modelo": "Ford Ka",
+    "ano": "2009",
+    "cor": "preto",
+    "fabricante": "Ford",
+    "preco": "18000"
+}
+
+###
+// PUT - Altera um carro existente
+PUT {{baseURL}}/carros
+Content-Type: application/json
+
+{
+    "_id": "615a1f84cd1b91092457ad09",
+    "modelo": "Ford Ka",
+    "ano": "2009",
+    "cor": "verde",
+    "fabricante": "Ford",
+    "preco": "18000"
+}   
