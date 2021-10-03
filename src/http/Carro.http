@@ -1,6 +1,6 @@
 // Teste da API REST
 
-@baseURL = http://localhost:4010
+@baseURL = https://projeto-gti-carmo.herokuapp.com
 @id = 615a1f84cd1b91092457ad09
 
 ###
@@ -24,11 +24,11 @@ POST {{baseURL}}/carros
 Content-Type: application/json
 
 {
-    "modelo": "Ford Ka",
-    "ano": "2009",
-    "cor": "preto",
-    "fabricante": "Ford",
-    "preco": "18000"
+    "modelo": "Fiurino",
+    "ano": "2010",
+    "cor": "branco",
+    "fabricante": "Fiat",
+    "preco": "8000"
 }
 
 ###
